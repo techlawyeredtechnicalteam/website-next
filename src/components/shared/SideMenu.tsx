@@ -38,6 +38,7 @@ export default function SideMenu() {
 									width={100}
 									height={80}
 									alt="The TechLawyered"
+									priority={true}
 								/>
 							</Link>
 							<button

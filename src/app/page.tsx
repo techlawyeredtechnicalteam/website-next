@@ -48,7 +48,7 @@ export default function Home() {
 						Who We Are
 					</h2>
 					<p className="mt-6 text-[1.7rem] text-textBlack">
-						{`TechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
+						{`TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
             Our immersive coding bootcamps empower aspiring developers with in-demand skills, while our expert DevOps services optimize your technology stack for peak performance.`}
 					</p>
 				</div>
@@ -172,13 +172,11 @@ export default function Home() {
 			<section className="grid lg:grid-cols-2">
 				<div className="p-12 flex items-center justify-center order-last lg:order-none  bg-[#f5f5f5]">
 					<Image
-						src={
-							"https://images.pexels.com/photos/6077296/pexels-photo-6077296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						}
+						src={"/tech-lawyer2.png"}
 						width={1000}
 						height={700}
 						alt="Tech Lawyered"
-						className="object-cover w-full h-full rounded-2xl"
+						className="object-cover object-top w-full h-[300px] lg:h-[500px] rounded-2xl"
 					/>
 				</div>
 				<div className="bg-bgBlack py-[28px] p-[20px]">
@@ -257,13 +255,11 @@ export default function Home() {
 				</div>
 				<div className="flex items-center justify-center p-12 bg-[#f5f5f5]">
 					<Image
-						src={
-							"https://images.pexels.com/photos/6077296/pexels-photo-6077296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						}
+						src={"/tech-lawyer.png"}
 						width={1000}
 						height={700}
 						alt="Tech Lawyered"
-						className="object-cover w-full h-full rounded-2xl"
+						className="object-cover object-top w-full h-[300px] lg:h-[500px] rounded-2xl"
 					/>
 				</div>
 			</section>

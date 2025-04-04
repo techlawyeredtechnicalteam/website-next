@@ -10,7 +10,7 @@ import MobileDev from "@/components/shared/icons/MobileDev";
 const data: any = {
 	"web-dev": {
 		title: "Web Development",
-		headerText: `At TechLawyered, we craft high-performance websites that are visually stunning and functionally robust. Whether you're a startup, a growing business, or an enterprise, our team delivers custom web solutions tailored to your needs. From engaging front-end designs to scalable back-end architectures, we ensure your website not only meets industry standards but exceeds user expectations.`,
+		headerText: `At TheTechLawyered, we craft high-performance websites that are visually stunning and functionally robust. Whether you're a startup, a growing business, or an enterprise, our team delivers custom web solutions tailored to your needs. From engaging front-end designs to scalable back-end architectures, we ensure your website not only meets industry standards but exceeds user expectations.`,
 		imgSrc: "/web-dev.png",
 		offeringsText: `We offer end-to-end web development services—from strategy and design to development and optimization. Our goal is to build fast, secure, and scalable web applications that drive engagement and business growth.`,
 		offerings: [
@@ -30,7 +30,7 @@ const data: any = {
 	},
 	"mobile-dev": {
 		title: "Mobile Development",
-		headerText: `Mobile-first experiences are essential in today’s digital landscape. At TechLawyered, we build intuitive, high-performing mobile applications that keep users engaged. Whether it’s native development for iOS and Android or a cross-platform solution, our team delivers apps that combine beautiful design with seamless functionality.`,
+		headerText: `Mobile-first experiences are essential in today’s digital landscape. At TheTechLawyered, we build intuitive, high-performing mobile applications that keep users engaged. Whether it’s native development for iOS and Android or a cross-platform solution, our team delivers apps that combine beautiful design with seamless functionality.`,
 		imgSrc: "/mobile-dev.png",
 		offeringsText: `We provide full-cycle mobile app development services, from ideation and UI/UX design to development and post-launch support. Our apps are built for performance, scalability, and user engagement.`,
 		offerings: [
@@ -50,7 +50,7 @@ const data: any = {
 	},
 	"legal-solutions": {
 		title: "Legal Solutions",
-		headerText: `Navigating the legal landscape can be complex, but at TechLawyered, we simplify it for businesses. From contract drafting to digital compliance, we offer expert legal services that protect your business and ensure regulatory adherence. Whether you're a startup or an established company, we provide tailored legal solutions that support your growth and operations.`,
+		headerText: `Navigating the legal landscape can be complex, but at TheTechLawyered, we simplify it for businesses. From contract drafting to digital compliance, we offer expert legal services that protect your business and ensure regulatory adherence. Whether you're a startup or an established company, we provide tailored legal solutions that support your growth and operations.`,
 		imgSrc: "/legal-solutions.png",
 		offeringsText: `We specialize in legal services for businesses operating in the digital space. Our focus is on compliance, contract management, and protecting intellectual property, so you can operate with confidence.`,
 		offerings: [
@@ -147,6 +147,58 @@ export default async function page({
 					))}
 				</div>
 			</section>
+			{title === "legal-solutions" && (
+				<>
+					<section className="flex flex-col items-center py-16 px-5 md:px-0">
+						<div className="flex flex-col gap-y-4 items-center justify-center">
+							<h2 className="text-[2rem] md:text-[4rem] lg:text-[4rem] xl:text-[4.5rem] font-bold text-center text-[#010D30]">
+								Built for Legal Teams, by TheTechLawyered
+							</h2>
+							<p className="text-gray-500 text-[1.7rem] font-medium text-center md:w-[60%]">
+								We designed and developed this case management tool to help
+								legal professionals handle cases, documents, deadlines, and
+								communications—all from one powerful dashboard.
+							</p>
+						</div>
+						<div className=" mt-12 flex items-center justify-center">
+							<div className="md:w-[90%] overflow-hidden rounded-3xl drop-shadow-xl">
+								<Image
+									width={1000}
+									height={1000}
+									alt="Tech Lawyered"
+									className="w-full h-full object-cover"
+									priority={true}
+									src={"/case-management.png"}
+								/>
+							</div>
+						</div>
+					</section>
+					<section className="flex flex-col items-center py-16 px-5 md:px-0">
+						<div className="flex flex-col gap-y-4 items-center justify-center">
+							<h2 className="text-[2rem] md:text-[4rem] lg:text-[4rem] xl:text-[4.5rem] font-bold text-center text-[#010D30]">
+								TeleCourt: Virtual Justice, Engineered by Us
+							</h2>
+							<p className="text-gray-500 text-[1.7rem] font-medium text-center md:w-[60%]">
+								Our custom-built virtual court platform brings the courtroom
+								online—secure, reliable, and easy to use for judges, lawyers,
+								and litigants.
+							</p>
+						</div>
+						<div className=" mt-12 flex items-center justify-center">
+							<div className="md:w-[90%] overflow-hidden rounded-3xl drop-shadow-xl">
+								<Image
+									width={1000}
+									height={1000}
+									alt="Tech Lawyered"
+									className="w-full h-full object-cover"
+									priority={true}
+									src={"/virtual-court.png"}
+								/>
+							</div>
+						</div>
+					</section>
+				</>
+			)}
 		</main>
 	);
 }

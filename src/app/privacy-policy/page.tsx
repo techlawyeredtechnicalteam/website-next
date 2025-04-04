@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function page() {
 	return (
@@ -22,7 +20,7 @@ export default function page() {
 							1. Introduction
 						</h2>
 						<p className="text-textGray text-[1.7rem]">
-							Welcome to The Tech Lawyered! Your privacy is important to us.
+							Welcome to TheTechLawyered! Your privacy is important to us.
 							This Privacy Policy explains how we collect, use, and protect your
 							information when you use our services.
 						</p>

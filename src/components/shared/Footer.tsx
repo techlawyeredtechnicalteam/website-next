@@ -23,7 +23,7 @@ export default function Footer() {
 					</Link>
 				</nav>
 			</div>
-			<div className="pt-[20px] flex flex-col md:flex-row md:items-center justify-between border-t border-t-[#E6FF2A3D] gap-[20px]">
+			<div className="pt-[20px] flex flex-col md:flex-row md:items-center justify-between border-t border-t-[#73eaff50] gap-[20px]">
 				<span className="text-2xl text-white">
 					&copy; 2025{" "}
 					{`${
@@ -31,7 +31,7 @@ export default function Footer() {
 							? ` - ${new Date(Date.now()).getFullYear()}`
 							: ""
 					}`}{" "}
-					The TechLawyered. All rights reserved
+					TheTechLawyered. All rights reserved
 				</span>
 				<div className="flex items-center gap-[33px]">
 					<Link href={"#"}>

@@ -39,7 +39,7 @@ export default function page() {
 						Who We Are
 					</h2>
 					<p className="mt-6 text-[1.7rem] text-textBlack">
-						{`TechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
+						{`TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
             Our immersive coding bootcamps empower aspiring developers with in-demand skills, while our expert DevOps services optimize your technology stack for peak performance.`}
 					</p>
 				</div>
@@ -122,13 +122,11 @@ export default function page() {
 				</div>
 				<div className="flex items-center justify-center p-12 bg-[#f5f5f5]">
 					<Image
-						src={
-							"https://images.pexels.com/photos/6077296/pexels-photo-6077296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-						}
+						src={"/tech-lawyer.png"}
 						width={1000}
 						height={700}
 						alt="Tech Lawyered"
-						className="object-cover w-full h-full rounded-2xl"
+						className="object-cover object-top w-full h-[300px] lg:h-[500px] rounded-2xl"
 					/>
 				</div>
 			</section>

@@ -59,6 +59,135 @@ export default function page() {
 					<p className="text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-medium">{`To be Nigeria's leading legal technology solutions provider, empowering law firms to thrive in the digital era while maintaining professional excellence.`}</p>
 				</div>
 			</section>
+			<section className="py-24 bg-bgBlack">
+				<div className="flex items-ceneter justify-center w-full mb-24">
+					<h2 className="w-max text-center text-[3rem] md:text-[4rem] xl:text-[4rem] font-extrabold leading-[120%] text-white">
+						Our Team
+					</h2>
+				</div>
+				<div className="flex items-center justify-center">
+					<div className="w-[90%] xl:w-[70%] flex flex-col gap-y-5">
+						<div className="flex flex-col md:flex-row  gap-5 pb-10 border-b border-b-[#73eaff50]">
+							<div className="shrink-0 w-full h-[300px]  md:w-[300px] md:h-[300px]">
+								<Image
+									src={"/founder.jpeg"}
+									width={1000}
+									height={700}
+									alt="Tech Lawyered"
+									className="object-cover object-top w-full h-full rounded-2xl shrink-0"
+								/>
+							</div>
+							<div>
+								<div className="flex flex-col gap-y-1 mb-5">
+									<span className="text-[1.7rem] font-bold text-white">
+										Simbiat Lola
+									</span>
+									<span className="text-[1.5rem] text-secondary">
+										Founder & CEO
+									</span>
+								</div>
+								<p className="text-2xl text-white">
+									Simbiat Lola, founder and CEO of Thetechlawyered Nig Ltd (est.
+									2023), combines expertise as both a lawyer and legal
+									technologist to revolutionize Nigeria's legal industry. Her
+									vision drives the creation of innovative solutions that
+									enhance access to justice through technology. <br /> <br />
+									Beyond leading Thetechlawyered, Simbiat's commitment to pro
+									bono work reflects her belief that technological advancement
+									should democratize legal services. She provides strategic
+									guidance to startups, helping them navigate regulatory
+									complexities while building strong foundations. <br /> <br />
+									What truly distinguishes Simbiat is her ability to bridge
+									legal requirements with technological possibilities, ensuring
+									solutions that are both legally sound and effective. Under her
+									leadership, Thetechlawyered continues to develop technologies
+									that streamline legal processes and open new pathways to
+									justice.
+								</p>
+							</div>
+						</div>
+						<div className="flex flex-col md:flex-row  gap-5 pb-10 border-b border-b-[#73eaff50]">
+							<div className="shrink-0 w-full h-[300px]  md:w-[300px] md:h-[300px]">
+								<Image
+									src={"/frontend-dev.jpeg"}
+									width={1000}
+									height={700}
+									alt="Tech Lawyered"
+									className="object-cover object-top w-full h-full rounded-2xl shrink-0"
+								/>
+							</div>
+							<div>
+								<div className="flex flex-col gap-y-1 mb-5">
+									<span className="text-[1.7rem] font-bold text-white">
+										Jonah Emmanuel
+									</span>
+									<span className="text-[1.5rem] text-secondary">
+										Senior Frontend Developer
+									</span>
+								</div>
+								<p className="text-2xl text-white">
+									As a Frontend Developer, I’ve had the opportunity to build and
+									scale user-facing applications with a strong focus on
+									performance, accessibility, and seamless user experiences. I
+									specialize in technologies like React, TypeScript, Tailwind
+									CSS, and various UI frameworks, and I enjoy turning complex
+									ideas into clean, responsive, and intuitive interfaces. <br />{" "}
+									<br /> In my role as a Technical Team Lead, I’ve been
+									responsible for guiding a team of developers through project
+									planning, code reviews, and architectural decisions. I work
+									closely with product managers and designers to translate
+									business goals into technical solutions, while also mentoring
+									team members, encouraging best practices, and maintaining code
+									quality. Balancing hands-on development with team coordination
+									has strengthened my leadership skills and reinforced the
+									importance of clear communication and collaborative
+									problem-solving. <br /> <br /> Overall, I’m passionate about
+									building scalable front-end systems and creating environments
+									where developers can thrive.
+								</p>
+							</div>
+						</div>
+						<div className="flex flex-col md:flex-row gap-5 pb-10">
+							<div className="shrink-0 w-full h-[300px]  md:w-[300px] md:h-[300px]">
+								<Image
+									src={"/backend-dev.jpeg"}
+									width={1000}
+									height={700}
+									alt="Tech Lawyered"
+									className="object-cover object-top w-full h-full rounded-2xl shrink-0"
+								/>
+							</div>
+							<div>
+								<div className="flex flex-col gap-y-1 mb-5">
+									<span className="text-[1.7rem] font-bold text-white">
+										Adams Muhammed
+									</span>
+									<span className="text-[1.5rem] text-secondary">
+										Backend Developer
+									</span>
+								</div>
+								<p className="text-2xl text-white">
+									I'm a passionate software engineer with over 5 years of
+									experience, specializing in frontend development and mobile
+									app development. I love writing clean, efficient code and have
+									worked extensively with Vue.js, Nuxt.js, React.js, Next.js,
+									Node.js, MongoDB, and even a bit of Django. My diverse skill
+									set helps me tackle a wide range of development challenges,
+									and I always adhere to best practices, ensuring my code is
+									thoroughly tested. <br /> <br /> In addition to my technical
+									expertise, I have a strong appreciation for UI/UX design. I
+									understand the importance of creating engaging, intuitive user
+									experiences and am committed to developing seamless
+									interactions and visually appealing interfaces. My goal is to
+									deliver high-quality solutions that not only meet project
+									requirements but also enhance user satisfaction and elevate
+									the overall user experience.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section className="py-24">
 				<div className="flex items-ceneter justify-center w-full mb-16">
 					<h2 className="w-max text-center text-[3rem] md:text-[4rem] xl:text-[4rem] font-extrabold leading-[120%] text-text-black">

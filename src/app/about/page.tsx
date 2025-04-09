@@ -3,6 +3,89 @@ import Image from "next/image";
 import TestimonialCard from "@/components/shared/TestimonialCard";
 import AppButton from "@/components/shared/AppButton";
 
+const testimonials = [
+	{
+		comment:
+			"TechLawyered helped us launch our digital case system in record time. They truly understand the intersection of tech and law.",
+		authorImage:
+			"https://img.freepik.com/free-photo/3d-rendering-man-portrait_23-2150964650.jpg?t=st=1744219217~exp=1744222817~hmac=e959f6297d12335e2cf0b292175402db346cd3e71ad55ebc3a9e39b38f7ce410&w=2000",
+		authorName: "Chinwe Okeke",
+		authorRole: "Legal Practitioner",
+	},
+	{
+		comment:
+			"We needed a secure virtual court solution, and TechLawyered delivered beyond expectations. Smooth, intuitive, and reliable.",
+		authorImage:
+			"https://img.freepik.com/premium-photo/lego-man-with-glasses-beard_1067267-14172.jpg?w=1380",
+		authorName: "Bamidele Adesina",
+		authorRole: "Court Registrar",
+	},
+	{
+		comment:
+			"Our firm now runs faster and leaner thanks to their custom-built legal workflow tool. Highly recommended!",
+		authorImage:
+			"https://img.freepik.com/free-photo/3d-rendering-man-portrait_23-2150964650.jpg?t=st=1744219217~exp=1744222817~hmac=e959f6297d12335e2cf0b292175402db346cd3e71ad55ebc3a9e39b38f7ce410&w=2000",
+		authorName: "Zainab Mohammed",
+		authorRole: "Managing Partner",
+	},
+	{
+		comment:
+			"From onboarding to deployment, the TechLawyered team was professional and very responsive to our needs.",
+		authorImage:
+			"https://img.freepik.com/premium-photo/lego-man-with-glasses-beard_1067267-14172.jpg?w=1380",
+		authorName: "Emeka Uzoma",
+		authorRole: "Tech-savvy Lawyer",
+	},
+	{
+		comment:
+			"Their legal tech tools have helped us digitize filings and communications with clients. Game changer!",
+		authorImage:
+			"https://img.freepik.com/premium-photo/lego-man-with-glasses-beard_1067267-14172.jpg?w=1380",
+		authorName: "Ifeoma Ebere",
+		authorRole: "Corporate Law Associate",
+	},
+	{
+		comment:
+			"TechLawyered built a platform that now handles all our remote hearings. The user experience is top-notch.",
+		authorImage:
+			"https://img.freepik.com/premium-photo/lego-man-with-glasses-beard_1067267-14172.jpg?w=1380",
+		authorName: "Musa Abdullahi",
+		authorRole: "ICT Support Staff",
+	},
+	{
+		comment:
+			"Their dedication to building scalable, secure legal tech is unmatched. We’ll definitely partner again.",
+		authorImage:
+			"https://img.freepik.com/free-photo/3d-rendering-man-portrait_23-2150964650.jpg?t=st=1744219217~exp=1744222817~hmac=e959f6297d12335e2cf0b292175402db346cd3e71ad55ebc3a9e39b38f7ce410&w=2000",
+		authorName: "Ngozi Ani",
+		authorRole: "Legal Innovation Specialist",
+	},
+	{
+		comment:
+			"What stood out for us was their ability to listen and turn our pain points into practical solutions.",
+		authorImage:
+			"https://img.freepik.com/premium-photo/lego-man-with-glasses-beard_1067267-14172.jpg?w=1380",
+		authorName: "Oluwaseun Ajayi",
+		authorRole: "Litigation Expert",
+	},
+	{
+		comment:
+			"Thanks to TechLawyered, our registry processes are now fully digitized and easier for the public to access.",
+		authorImage:
+			"https://img.freepik.com/free-photo/3d-rendering-man-portrait_23-2150964650.jpg?t=st=1744219217~exp=1744222817~hmac=e959f6297d12335e2cf0b292175402db346cd3e71ad55ebc3a9e39b38f7ce410&w=2000",
+		authorName: "Rachael Onuoha",
+		authorRole: "Court Clerk",
+	},
+	{
+		comment:
+			"We trust TechLawyered for anything legal-tech. They just get it—simple, efficient, and secure delivery.",
+		authorImage:
+			"https://img.freepik.com/free-photo/3d-rendering-man-portrait_23-2150964650.jpg?t=st=1744219217~exp=1744222817~hmac=e959f6297d12335e2cf0b292175402db346cd3e71ad55ebc3a9e39b38f7ce410&w=2000",
+		authorName: "Tunde Akinwale",
+		authorRole: "LegalTech Consultant",
+	},
+];
+
 export default function page() {
 	return (
 		<main>
@@ -199,36 +282,28 @@ export default function page() {
 					<div className="overflow-hidden w-full">
 						<div className="flex items-center gap-[1.5rem]">
 							<div className="flex items-center gap-[1.5rem] w-max showcase">
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
+								{testimonials.slice(0, 5).map((d, i) => (
+									<TestimonialCard testimonial={d} key={i} />
+								))}
 							</div>
 							<div className="flex items-center gap-[1.5rem] w-max showcase">
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
+								{testimonials.slice(5).map((d, i) => (
+									<TestimonialCard testimonial={d} key={i} />
+								))}
 							</div>
 						</div>
 					</div>
 					<div className="overflow-hidden w-full">
 						<div className="flex items-center gap-[1.5rem]">
 							<div className="flex items-center gap-[1.5rem] w-max showcase-reverse">
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
+								{testimonials.slice(0, 5).map((d, i) => (
+									<TestimonialCard testimonial={d} key={i} />
+								))}
 							</div>
 							<div className="flex items-center gap-[1.5rem] w-max showcase-reverse">
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
-								<TestimonialCard />
+								{testimonials.slice(5).map((d, i) => (
+									<TestimonialCard testimonial={d} key={i} />
+								))}
 							</div>
 						</div>
 					</div>

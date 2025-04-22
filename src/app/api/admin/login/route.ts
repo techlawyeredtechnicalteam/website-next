@@ -60,7 +60,7 @@ export async function POST(req: Request) {
 		}
 
 		return NextResponse.json(
-			{ message: "An error occurred!" },
+			{ message: "An error occurred!", error },
 			{ status: 500 }
 		);
 	}

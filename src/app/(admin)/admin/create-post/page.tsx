@@ -8,7 +8,7 @@ export default function page() {
 	return (
 		<main>
 			<section className="min-h-screen flex justify-center w-full h-full py-12">
-				<div className="w-[50%]">
+				<div className="w-[95%] lg:w-[70%] xl:w-[50%]">
 					<div className="flex items-center gap-5">
 						<Link href={"/admin"}>
 							<AppButton

@@ -10,7 +10,7 @@ export async function middleware(request: NextRequest) {
 	const pathname = request.nextUrl.pathname;
 	const isApiRoute = pathname.startsWith("/api");
 	const isAdminUIRoute = pathname.startsWith("/admin");
-
+ 
 	// if (isApiRoute) {
 	// 	try {
 	// 		if (pathname !== "/api/admin/login" && pathname !== "/api/admin/signup") {

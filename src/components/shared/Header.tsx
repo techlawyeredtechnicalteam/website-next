@@ -12,11 +12,17 @@ export default function Header() {
 	const isServices = pathname === "/services";
 	const isSupport = pathname === "/contact";
 	const isAbout = pathname === "/about";
+	const isBlog = pathname === "/blog";
 
 	return (
 		<header className="h-[100px] bg-bgBlack px-5 md:px-[15px] lg:px-[25px] xl:px-[50px] flex items-center justify-between sticky top-0 z-[10]">
 			<Link href={"/"}>
-				<Image src={"/logo.png"} width={100} height={80} alt="Navigo Rides" />
+				<Image
+					src={"/logo.png"}
+					width={100}
+					height={80}
+					alt="The Tech Lawyered"
+				/>
 			</Link>
 			<nav className="hidden lg:flex items-center gap-10">
 				<Dropdown
@@ -63,6 +69,15 @@ export default function Header() {
 						</mark>
 					) : (
 						"Contact"
+					)}
+				</Link>
+				<Link href={"/blog"} className="text-[1.7rem]  text-white">
+					{isBlog ? (
+						<mark className="markerb bg-transparent text-secondary">
+							Our Blog
+						</mark>
+					) : (
+						"Our Blog"
 					)}
 				</Link>
 			</nav>

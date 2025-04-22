@@ -25,6 +25,12 @@ const nextConfig: NextConfig = {
 				hostname: "img.freepik.com",
 				pathname: "/**",
 			},
+			{
+				protocol: "https",
+				hostname:
+					"tech-lawyered-storage-bucket-test.s3.eu-north-1.amazonaws.com",
+				pathname: "/**",
+			},
 		],
 	},
 	eslint: {

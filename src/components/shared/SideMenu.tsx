@@ -14,6 +14,7 @@ export default function SideMenu() {
 	const isServices = pathname === "/services";
 	const isSupport = pathname === "/support";
 	const isAbout = pathname === "/about";
+	const isBlog = pathname === "/blog";
 
 	const [open, setOpen] = useState(false);
 
@@ -96,6 +97,14 @@ export default function SideMenu() {
 									isSupport ? "text-secondary" : "text-white"
 								}`}>
 								Support
+							</Link>
+							<Link
+								href={"/blog"}
+								onClick={() => setOpen(false)}
+								className={`text-[4rem] font-bold ${
+									isBlog ? "text-secondary" : "text-white"
+								}`}>
+								Our Blog
 							</Link>
 						</div>
 						<nav className="px-5 mt-10 flex flex-wrap items-center gap-6 md:gap-10">

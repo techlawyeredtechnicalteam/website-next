@@ -1,11 +1,10 @@
 "use client";
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, ButtonHTMLAttributes } from "react";
 import AppLoader from "./AppLoader";
-import { motion, MotionStyle } from "framer-motion";
+import { HTMLMotionProps, motion, MotionStyle } from "framer-motion";
 
-interface AppButtonProps {
+interface AppButtonProps extends HTMLMotionProps<"button"> {
 	label?: string;
-	type?: "button" | "submit" | "reset" | undefined;
 	showLoading?: boolean;
 	fullyRounded?: boolean;
 	styles?: MotionStyle;
@@ -30,7 +29,9 @@ function AppButton({
 			{...otherProps}
 			className={`${
 				fullyRounded ? "rounded-full" : "rounded-2xl"
-			} h-[50px] cursor-pointer disabled:cursor-not-allowed flex items-center justify-center text-2xl text-white ${classname}`}
+			} h-[50px] cursor-pointer disabled:cursor-not-allowed flex items-center justify-center text-2xl text-white ${classname} ${
+				otherProps.className
+			}`}
 			disabled={showLoading}>
 			{showLoading && <AppLoader width="3rem" height="3rem" border="0.2rem" />}
 			{!showLoading && label && label}

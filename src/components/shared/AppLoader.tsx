@@ -8,7 +8,7 @@ export default function AppLoader({
 	return (
 		<div
 			style={{ width, height, borderWidth: border }}
-			className="rounded-full  border-[#C8DCFE] border-t-primary  animate-loaderspin"></div>
+			className="rounded-full  border-[#C8DCFE] border-t-primary  spin"></div>
 	);
 }
 

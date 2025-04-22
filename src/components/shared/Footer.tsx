@@ -21,6 +21,9 @@ export default function Footer() {
 					<Link href={"/privacy-policy"} className="text-[1.7rem]  text-white">
 						Privacy Policy
 					</Link>
+					<Link href={"/blog"} className="text-[1.7rem]  text-white">
+						Our Blog
+					</Link>
 				</nav>
 			</div>
 			<div className="pt-[20px] flex flex-col md:flex-row md:items-center justify-between border-t border-t-[#73eaff50] gap-[20px]">

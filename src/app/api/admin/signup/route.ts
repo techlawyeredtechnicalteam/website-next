@@ -10,7 +10,7 @@ const schema = Yup.object().shape({
 	fullName: Yup.string().required(),
 });
 
-export async function POST(req: Request, res: NextApiResponse) {
+export async function POST(req: Request) {
 	try {
 		const body = await req.json();
 		const validatedFields = await schema.validate(body, {

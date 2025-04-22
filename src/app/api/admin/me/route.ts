@@ -3,7 +3,7 @@ import { prisma } from "@/utils/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { verify } from "jsonwebtoken";
 
-export async function GET(req: NextRequest, res: NextApiResponse) {
+export async function GET(req: NextRequest) {
 	try {
 		const accessToken = req.headers.get("accessToken");
 

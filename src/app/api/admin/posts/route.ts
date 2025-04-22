@@ -122,6 +122,7 @@ export async function GET(req: NextRequest) {
 			{ status: 200 }
 		);
 	} catch (error) {
+		console.log(error);
 		if (error instanceof Yup.ValidationError) {
 			return NextResponse.json(
 				{

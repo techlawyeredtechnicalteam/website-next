@@ -11,26 +11,26 @@ export async function middleware(request: NextRequest) {
 	const isApiRoute = pathname.startsWith("/api");
 	const isAdminUIRoute = pathname.startsWith("/admin");
 
-	if (isApiRoute) {
-		try {
-			if (pathname !== "/api/admin/login" && pathname !== "/api/admin/signup") {
-				const accessToken = request.headers.get("accessToken");
-				if (!accessToken) {
-					throw new Error("Unathorized!");
-				}
+	// if (isApiRoute) {
+	// 	try {
+	// 		if (pathname !== "/api/admin/login" && pathname !== "/api/admin/signup") {
+	// 			const accessToken = request.headers.get("accessToken");
+	// 			if (!accessToken) {
+	// 				throw new Error("Unathorized!");
+	// 			}
 
-				return NextResponse.next();
-			}
-		} catch (error) {
-			console.log(error);
-			return NextResponse.json(
-				{ message: "Unauthorized" },
-				{
-					status: 401,
-				}
-			);
-		}
-	}
+	// 			return NextResponse.next();
+	// 		}
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 		return NextResponse.json(
+	// 			{ message: "Unauthorized" },
+	// 			{
+	// 				status: 401,
+	// 			}
+	// 		);
+	// 	}
+	// }
 
 	if (isAdminUIRoute) {
 		const isAuthRoute = pathname === "/admin/auth";

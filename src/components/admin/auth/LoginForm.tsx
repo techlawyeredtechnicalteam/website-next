@@ -37,14 +37,14 @@ export default function LoginForm() {
 	) {
 		try {
 			const res = await ApiInstance.post("/api/admin/login", values);
-			setTokens(res.data.token);
+			await setTokens(res.data.token);
 			setUser(res.data.user);
 			showAndHideAlert({
 				message: res.data.message,
 				type: "success",
 			});
 			setSubmitting(false);
-			resetForm();
+
 			router.replace("/admin");
 		} catch (error) {
 			const err = error as AxiosError<any>;

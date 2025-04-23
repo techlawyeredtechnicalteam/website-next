@@ -20,8 +20,8 @@ export default function page() {
 							1. Introduction
 						</h2>
 						<p className="text-textGray text-[1.7rem]">
-							Welcome to TheTechLawyered! Your privacy is important to us.
-							This Privacy Policy explains how we collect, use, and protect your
+							Welcome to TheTechLawyered! Your privacy is important to us. This
+							Privacy Policy explains how we collect, use, and protect your
 							information when you use our services.
 						</p>
 					</div>
@@ -101,9 +101,9 @@ export default function page() {
 						<p className="text-textGray text-[1.7rem]">
 							If you have any questions, contact us at
 							<a
-								href="mailto:support@techlawyered.com"
+								href="mailto:info@thetechlawyered.ng"
 								className="text-textBlack underline">
-								support@techlawyered.com
+								info@thetechlawyered.ng
 							</a>
 							.
 						</p>

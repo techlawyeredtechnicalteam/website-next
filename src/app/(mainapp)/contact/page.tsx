@@ -42,9 +42,9 @@ export default function page() {
 							</span>
 						</div>
 					</div>
-					<Link href={"mailto:support@navigorides.com.ng"}>
+					<Link href={"mailto:info@thetechlawyered.ng"}>
 						<p className="text-center text-[1.7rem] underline font-medium mt-[15px]">
-							thetechlawyeredlp@gmail.com
+							info@thetechlawyered.ng
 						</p>
 					</Link>
 				</div>

@@ -4,7 +4,7 @@ import { verify } from "jsonwebtoken";
 import { headers } from "next/headers";
 import { ApiInstance } from "./utils/api-instance";
 import { AxiosError } from "axios";
- 
+  
 export async function middleware(request: NextRequest) {
 	// Middleware logic goes here
 	const pathname = request.nextUrl.pathname;

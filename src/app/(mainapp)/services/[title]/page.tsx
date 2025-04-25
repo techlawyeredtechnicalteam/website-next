@@ -6,6 +6,7 @@ import AppButton from "@/components/shared/AppButton";
 import WebDev from "@/components/shared/icons/WebDev";
 import Legal from "@/components/shared/icons/Legal";
 import MobileDev from "@/components/shared/icons/MobileDev";
+import { Metadata } from "next";
 
 const data: any = {
 	"web-dev": {
@@ -69,6 +70,45 @@ const data: any = {
 		],
 	},
 };
+
+type Props = {
+	params: Promise<{ title: string }>;
+	searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+	const title = (await params).title;
+	const pageData = data[title];
+
+	return {
+		title: `TheTechLawyered | ${pageData.title}`,
+		description: `${pageData.headerText}`,
+		metadataBase: new URL("https://www.thetechlawyered.ng"),
+
+		keywords:
+			"lawyer website,law tech,software development,devops,web agency,devops,web agency,fullstack development,cloud computing,AI,ML,Artificial Intelligence",
+
+		openGraph: {
+			title: "TheTechLawyered | Where Technology Meets Legal Excellence",
+			description: `${pageData.headerText}`,
+			type: "website",
+			url: `https://www.thetechlawyered.ng/services/${pageData.title}`,
+			images: [
+				{
+					url: pageData.imgSrc,
+					width: 150,
+					height: 150,
+				},
+			],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: `TheTechLawyered | ${pageData.title}`,
+			description: `${pageData.headerText}`,
+			images: [pageData.imgSrc],
+		},
+	};
+}
 
 export default async function page({
 	params,

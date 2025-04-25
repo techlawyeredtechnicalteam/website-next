@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
 	/* config options here */
 	/* config options here */
 	images: {
-		remotePatterns: [
+		remotePatterns: [ 
 			{
 				protocol: "https",
 				hostname: "images.pexels.com",

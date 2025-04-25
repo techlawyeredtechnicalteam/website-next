@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	metadataBase: new URL("https://www.thetechlawyered.ng"),
 
 	keywords:
-		"software development,devops,web agency,devops,web agency,fullstack development,cloud computing,AI,ML,Artificial Intelligence",
+		"lawyer website,law tech,software development,devops,web agency,devops,web agency,fullstack development,cloud computing,AI,ML,Artificial Intelligence",
 
 	openGraph: {
 		title: "TheTechLawyered | Where Technology Meets Legal Excellence",

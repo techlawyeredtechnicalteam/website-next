@@ -45,6 +45,7 @@ export const metadata: Metadata = {
 		description: `TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
 		images: ["https://www.thetechlawyered.ng/logo.png"],
 	},
+	icons: "https://www.thetechlawyered.ng/logo.png",
 };
 
 export const viewport: Viewport = {

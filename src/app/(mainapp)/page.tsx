@@ -13,6 +13,7 @@ import VerifiedIcon from "@/components/shared/icons/VerifiedIcon";
 import Vitest from "@/components/shared/icons/Vitest";
 import WebDev from "@/components/shared/icons/WebDev";
 import RecentPosts from "@/components/shared/RecentPosts";
+import WaitlistForm from "@/components/shared/WaitlistForm";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,6 +44,38 @@ export default function Home() {
 							classname="bg-primary !text-secondary  !w-max px-[40px] mt-[20px] !text-[1.7rem]"
 						/>
 					</Link>
+				</div>
+			</section>
+			<section className="grid lg:grid-cols-2 gap-y-12 py-16 px-5 md:px-[50px] lg:px-[50px] xl:px-[80px]">
+				<div className="flex flex-col items-center ">
+					<div className="md:w-[90%]">
+						<h2 className="text-[2rem] md:text-[4rem] lg:text-[3rem] xl:text-[4rem] font-semibold text-[#010D30] text-center">
+							Built for Legal Teams, by TheTechLawyered
+						</h2>
+					</div>
+					<div className="md:w-[90%] overflow-hidden rounded-3xl drop-shadow-xl mt-10">
+						<Image
+							width={1000}
+							height={1000}
+							alt="Tech Lawyered"
+							className="w-full h-full object-cover"
+							priority={true}
+							src={"/case-management.png"}
+						/>
+					</div>
+					<div className="mt-10 md:w-[90%] overflow-hidden rounded-3xl drop-shadow-xl">
+						<Image
+							width={1000}
+							height={1000}
+							alt="Tech Lawyered"
+							className="w-full h-full object-cover"
+							priority={true}
+							src={"/virtual-court.png"}
+						/>
+					</div>
+				</div>
+				<div className="flex flex-col gap-y-4 justify-center">
+					<WaitlistForm />
 				</div>
 			</section>
 			<section className="px-5 md:px-[50px] lg:px-[50px] xl:px-[100px] pb-0 pt-16 md:py-16 flex-col lg:flex-row flex w-full gap-6 bg-[#f5f5f5]">

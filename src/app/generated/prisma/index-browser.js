@@ -136,6 +136,16 @@ exports.Prisma.BlogScalarFieldEnum = {
   image: 'image'
 };
 
+exports.Prisma.WaitlistScalarFieldEnum = {
+  id: 'id',
+  fullName: 'fullName',
+  email: 'email',
+  isLawyer: 'isLawyer',
+  yearsPostCall: 'yearsPostCall',
+  phoneNumber: 'phoneNumber',
+  SCN: 'SCN'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -154,7 +164,8 @@ exports.Prisma.NullsOrder = {
 
 exports.Prisma.ModelName = {
   User: 'User',
-  Blog: 'Blog'
+  Blog: 'Blog',
+  Waitlist: 'Waitlist'
 };
 
 /**

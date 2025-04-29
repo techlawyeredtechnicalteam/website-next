@@ -34,3 +34,13 @@ model Blog {
   updatedAt DateTime @updatedAt
   image String
 }
+
+model Waitlist {
+  id String @id @default(cuid())
+  fullName String
+  email String @unique
+  isLawyer Boolean
+  yearsPostCall Int?
+  phoneNumber String?
+  SCN String?
+}

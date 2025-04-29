@@ -5,6 +5,7 @@ import NextTopLoader from "nextjs-toploader";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import RootProvider from "@/components/shared/providers/RootProvider";
+import Alert from "@/components/shared/Alert";
 
 const gabarito = Gabarito({
 	variable: "--font-gabarito",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
 		description: `TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
 		images: ["https://www.thetechlawyered.ng/logo.png"],
 	},
-	icons: "https://www.thetechlawyered.ng/logo.png",
+	icons: "https://www.thetechlawyered.ng/favicon.ico",
 };
 
 export const viewport: Viewport = {
@@ -64,6 +65,7 @@ export default function RootLayout({
 			<body
 				className={`${gabarito.variable} ${hubot.variable} font-hubot antialiased`}>
 				<RootProvider user={null}>
+					<Alert />
 					<NextTopLoader
 						color="#73eaff"
 						shadow="0 0 10px #73eaff,0 0 5px #73eaff"

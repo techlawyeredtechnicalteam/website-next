@@ -49,8 +49,9 @@ export default function Home() {
 			<section className="grid lg:grid-cols-2 gap-y-12 py-16 px-5 md:px-[50px] lg:px-[50px] xl:px-[80px]">
 				<div className="flex flex-col items-center ">
 					<div className="md:w-[90%]">
-						<h2 className="text-[3rem] md:text-[4rem] lg:text-[3rem] xl:text-[4rem] font-semibold text-[#010D30] text-center">
-							Built for Legal Teams, by TheTechLawyered
+						<h2 className="text-[3rem] md:text-[4rem] lg:text-[3rem] xl:text-[3rem] font-semibold text-[#010D30] text-center">
+							First Traditional Virtual Court Management System built for
+							Nigerian Judges & Lawyers
 						</h2>
 					</div>
 					<div className="md:w-[90%] overflow-hidden rounded-3xl drop-shadow-xl mt-10">

@@ -25,9 +25,8 @@ export default function WaitlistForm() {
 	return (
 		<>
 			<p className="text-gray-500 text-[1.7rem] font-medium md:w-[90%]">
-				All your legal work—organized, simplified, and right where you need it.
-				Be the first to experience the future of case management. Join the
-				waitlist today.
+				COMING SOON!! Be the first to experience the future of case management.
+				Join the waitlist today.
 			</p>
 			<Formik
 				validationSchema={schema}

@@ -8,6 +8,7 @@ import * as Yup from "yup";
 import useAlert from "@/hooks/useAlert";
 import { AxiosError } from "axios";
 import { ApiInstance } from "@/utils/api-instance";
+import Link from "next/link";
 
 const schema = Yup.object().shape({
 	email: Yup.string().required(),
@@ -26,7 +27,12 @@ export default function WaitlistForm() {
 		<>
 			<p className="text-gray-500 text-[1.7rem] font-medium md:w-[90%]">
 				COMING SOON!! Be the first to experience the future of case management.
-				Join the waitlist today.
+				Join the waitlist today.{" "}
+				<Link
+					href={"/services/legal-solutions"}
+					className="underline text-primary">
+					Learn More
+				</Link>
 			</p>
 			<Formik
 				validationSchema={schema}

@@ -192,7 +192,7 @@ export default async function page({
 					<section className="flex flex-col items-center py-16 px-5 md:px-0">
 						<div className="flex flex-col gap-y-4 items-center justify-center">
 							<h2 className="text-[2rem] md:text-[4rem] lg:text-[4rem] xl:text-[4.5rem] font-bold text-center text-[#010D30]">
-								Built for Legal Teams, by TheTechLawyered
+								Built for Law Firms and Lawyers, by TheTechLawyered
 							</h2>
 							<p className="text-gray-500 text-[1.7rem] font-medium text-center md:w-[60%]">
 								We designed and developed this case management tool to help

@@ -10,81 +10,82 @@ import Alert from "@/components/shared/Alert";
 import { ApiInstance } from "@/utils/api-instance";
 
 const gabarito = Gabarito({
-	variable: "--font-gabarito",
-	subsets: ["latin"],
-	weight: "variable",
+  variable: "--font-gabarito",
+  subsets: ["latin"],
+  weight: "variable"
 });
 
 const hubot = Hubot_Sans({
-	variable: "--font-hubot",
-	subsets: ["latin"],
-	weight: "variable",
+  variable: "--font-hubot",
+  subsets: ["latin"],
+  weight: "variable"
 });
 
 export const metadata: Metadata = {
-	title: "TheTechLawyered | Where Technology Meets Legal Excellence",
-	description: `TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
-	metadataBase: new URL("https://www.thetechlawyered.ng"),
+  title: "Cyntonisca| Where Technology Meets Legal Excellence",
+  description: `Cyntonisca fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
+  metadataBase: new URL("https://www.cyntonisca.com"),
 
-	keywords:
-		"software development,devops,web agency,devops,web agency,fullstack development,cloud computing,AI,ML,Artificial Intelligence",
+  keywords:
+    "software development,devops,web agency,devops,web agency,fullstack development,cloud computing,AI,ML,Artificial Intelligence",
 
-	openGraph: {
-		title: "TheTechLawyered | Where Technology Meets Legal Excellence",
-		description: `TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
-		type: "website",
-		url: "https://www.thetechlawyered.ng",
-		images: [
-			{
-				url: "https://thetechlawyered.ng/logo.png",
-				width: 150,
-				height: 150,
-			},
-		],
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "TheTechLawyered | Where Technology Meets Legal Excellence",
-		description: `TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
-		images: ["https://www.thetechlawyered.ng/logo.png"],
-	},
+  openGraph: {
+    title: "Cyntonisca | Where Technology Meets Legal Excellence",
+    description: `Cyntonisca fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
+    type: "website",
+    url: "https://www.cyntonisca.com",
+    images: [
+      {
+        url: "https://www.cyntonisca.com/logo.png",
+        width: 150,
+        height: 150
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cyntonisca | Where Technology Meets Legal Excellence",
+    description: `Cyntonisca fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.`,
+    images: ["https://www.cyntonisca.com/logo.png"]
+  }
 };
 
 export const viewport: Viewport = {
-	width: "device-width",
-	maximumScale: 1,
-	initialScale: 1,
+  width: "device-width",
+  maximumScale: 1,
+  initialScale: 1
 };
 
 export default async function RootLayout({
-	children,
+  children
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	let user: User | null = null;
+  let user: User | null = null;
 
-	try {
-		const res = await ApiInstance.get("/api/admin/me");
-		user = res.data.user;
-	} catch (error) {
-		user = null;
-	}
+  try {
+    const res = await ApiInstance.get("/api/admin/me");
+    user = res.data.user;
+  } catch (error) {
+    user = null;
+  }
 
-	return (
-		<html lang="en">
-			<body
-				className={`${gabarito.variable} ${hubot.variable} font-hubot antialiased`}>
-				<RootProvider user={user}>
-					<Alert />
-					<NextTopLoader
-						color="#73eaff"
-						shadow="0 0 10px #73eaff,0 0 5px #73eaff"
-					/>
-					<AdminHeader />
-					{children}
-					<Footer />
-				</RootProvider>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body
+        className={`${gabarito.variable} ${hubot.variable} font-hubot antialiased`}
+      >
+        <RootProvider user={user}>
+          <Alert />
+          <NextTopLoader
+            color="#73eaff"
+            shadow="0 0 10px #73eaff,0 0 5px #73eaff"
+          />
+          <AdminHeader />
+          {children}
+          <Footer />
+        </RootProvider>
+      </body>
+    </html>
+  );
 }

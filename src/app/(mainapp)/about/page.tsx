@@ -122,7 +122,7 @@ export default function page() {
             Who We Are
           </h2>
           <p className="mt-6 text-[1.7rem] text-textBlack">
-            {`TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
+            {`Cyntonisca fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
             Our immersive coding bootcamps empower aspiring developers with in-demand skills, while our expert DevOps services optimize your technology stack for peak performance.`}
           </p>
         </div>

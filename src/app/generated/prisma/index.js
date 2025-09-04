@@ -154,7 +154,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\oikeo\\OneDrive\\Documents\\GitHub\\website-next\\src\\app\\generated\\prisma",
+      "value": "C:\\Users\\oikeo\\OneDrive\\Documents\\GitHub\\website-next-fork\\website-next\\src\\app\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -168,12 +168,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\oikeo\\OneDrive\\Documents\\GitHub\\website-next\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\oikeo\\OneDrive\\Documents\\GitHub\\website-next-fork\\website-next\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
-    "schemaEnvPath": "../../../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../../../prisma",
   "clientVersion": "6.15.0",

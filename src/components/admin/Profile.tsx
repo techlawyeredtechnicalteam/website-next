@@ -123,7 +123,7 @@ export default function Profile({ forNewUser = true }) {
 						height={300}
 						src={profilePic?.url ?? user.profilePicture}
 						className="w-[50px] h-[50px] object-cover rounded-full"
-						alt="TechLawyered"
+						alt="Cyntonisca"
 					/>
 				)}
 
@@ -131,7 +131,7 @@ export default function Profile({ forNewUser = true }) {
 					<Image
 						width={300}
 						height={300}
-						alt="TechLawyered"
+						alt="Cyntonisca"
 						src={"/no-profile.png"}
 						className="w-[50px] h-[50px] object-cover rounded-full"
 					/>

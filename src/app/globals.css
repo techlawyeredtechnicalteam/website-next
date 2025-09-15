@@ -3,11 +3,11 @@
 @theme inline {
 	--font-gabarito: var(--font-gabarito);
 	--font-hubot: var(--font-hubot);
-	--color-primary: #031e42;
-	--color-bgBlack: #011228;
-	--color-secondary: #73eaff;
+	--color-primary: #5E4241;
+	--color-bgBlack: #645250;
+	--color-secondary: #82706E;
 	--color-textBlack: #1e1e1e;
-	--color-textGray: #505050; 
+	--color-textGray: #505050;
 	--breakpoint-lgxl: 1281px;
 }
 
@@ -22,6 +22,7 @@ html {
 .showcase {
 	animation: customMarqueeA 10s linear infinite;
 }
+
 .showcase-reverse {
 	animation: customMarqueeReverse 10s linear infinite;
 }

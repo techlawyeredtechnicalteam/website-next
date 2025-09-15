@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     comment:
-      "We needed a secure virtual court solution, and TechLawyered delivered beyond expectations. Smooth, intuitive, and reliable.",
+      "We needed a secure virtual court solution, and Cyntonisca delivered beyond expectations. Smooth, intuitive, and reliable.",
     authorImage:
       "https://img.freepik.com/premium-photo/lego-man-with-glasses-beard_1067267-14172.jpg?w=1380",
     authorName: "Bamidele Adesina",
@@ -30,7 +30,7 @@ const testimonials = [
   },
   {
     comment:
-      "From onboarding to deployment, the TechLawyered team was professional and very responsive to our needs.",
+      "From onboarding to deployment, the Cyntonisca team was professional and very responsive to our needs.",
     authorImage:
       "https://img.freepik.com/premium-photo/lego-man-with-glasses-beard_1067267-14172.jpg?w=1380",
     authorName: "Emeka Uzoma",
@@ -320,7 +320,7 @@ export default function page() {
           <AppButton
             label="Get In Touch"
             fullyRounded
-            classname="bg-primary !text-secondary !w-max px-[40px] mt-[20px]"
+            classname="bg-primary !text-white !w-max px-[40px] mt-[20px]"
           />
         </div>
         <div className="flex items-center justify-center p-12 bg-[#f5f5f5]">

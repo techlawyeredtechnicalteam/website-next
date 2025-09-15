@@ -104,7 +104,7 @@ export default function WaitlistForm() {
 							fullyRounded
 							type="submit"
 							showLoading={isSubmitting}
-							classname="bg-primary !text-secondary  !w-max px-[40px] mt-[20px] !text-[1.7rem]"
+							classname="bg-primary !text-white  !w-max px-[40px] mt-[20px] !text-[1.7rem]"
 						/>
 					</Form>
 				)}

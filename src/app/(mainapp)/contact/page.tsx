@@ -16,7 +16,7 @@ export default function page() {
           width={1000}
           height={1000}
           className="w-full h-full object-cover object-top"
-          alt="Tech Lawyered"
+          alt="Cyntonisca"
           src={"/about.png"}
         />
         <div className="absolute w-full h-full top-0 px-5 md:px-[15px] lg:px-[25px] xl:px-[50px] flex flex-col justify-center">
@@ -63,7 +63,7 @@ export default function page() {
           <Link href={"https://wa.me/2347043072166"} target="_blank">
             <AppButton
               label="Start Chat"
-              classname="bg-primary  w-max px-[15px] !text-secondary mt-[15px]"
+              classname="bg-primary  w-max px-[15px] !text-white mt-[15px]"
               fullyRounded
             />
           </Link>

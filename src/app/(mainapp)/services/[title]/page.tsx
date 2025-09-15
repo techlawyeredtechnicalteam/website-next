@@ -134,7 +134,7 @@ export default async function page({
             <AppButton
               label="Get In Touch"
               fullyRounded
-              classname="bg-primary !text-secondary  !w-max px-[40px] mt-[20px] !text-[1.7rem]"
+              classname="bg-primary !text-white  !w-max px-[40px] mt-[20px] !text-[1.7rem]"
             />
           </Link>
         </div>

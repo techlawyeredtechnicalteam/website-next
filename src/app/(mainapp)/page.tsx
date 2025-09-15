@@ -41,7 +41,7 @@ export default function Home() {
             <AppButton
               label="Get In Touch"
               fullyRounded
-              classname="bg-primary !text-secondary  !w-max px-[40px] mt-[20px] !text-[1.7rem]"
+              classname="bg-primary !text-white  !w-max px-[40px] mt-[20px] !text-[1.7rem]"
             />
           </Link>
         </div>
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="grid lg:grid-cols-2 gap-y-12 py-16 px-5 md:px-[50px] lg:px-[50px] xl:px-[80px]">
         <div className="flex flex-col items-center ">
           <div className="md:w-[90%]">
-            <h2 className="text-[3rem] md:text-[4rem] lg:text-[3rem] xl:text-[3rem] font-semibold text-[#010D30] text-center">
+            <h2 className="text-[3rem] md:text-[4rem] lg:text-[3rem] xl:text-[3rem] font-semibold text-[#5E4241] text-center">
               First Traditional Virtual Court Management System built for
               Nigerian Judges & Lawyers
             </h2>
@@ -79,14 +79,14 @@ export default function Home() {
           <WaitlistForm />
         </div>
       </section>
-      <section className="px-5 md:px-[50px] lg:px-[50px] xl:px-[100px] pb-0 pt-16 md:py-16 flex-col lg:flex-row flex w-full gap-6 bg-[#f5f5f5]">
+      <section className="px-5 md:px-[50px] lg:px-[50px] xl:px-[100px] pb-0 pt-16 md:py-16 flex-col lg:flex-row flex w-full gap-6 bg-[#F8F6F5]">
         <div className="lg:w-1/2 flex flex-col justify-center">
           <h2 className="text-[3rem] md:text-[3rem] lg:text-[3rem] xl:text-[4rem] font-bold text-textBlack font-hubot leading-[130%]">
             Who We Are
           </h2>
           <p className="mt-6 text-[1.7rem] text-textBlack">
-            {`TheTechLawyered fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
-            Our immersive coding bootcamps empower aspiring developers with in-demand skills, while our expert DevOps services optimize your technology stack for peak performance.`}
+            {`Cyntonisca fuels innovation. We're your strategic partner for software development, delivering cutting-edge solutions that drive business growth.
+            Our expert DevOps services optimize your technology stack for peak performance.`}
           </p>
         </div>
         <div className="lg:w-1/2">
@@ -158,7 +158,7 @@ export default function Home() {
                 Legal Solutions
               </h5>
               <p className="mt-3 text-[2rem] text-textBlack">
-                {`We help businesses navigate the legal side of things—contracts, compliance, and digital regulations—so you can focus on what you do best.`}
+                {`We help businesses navigate the legal side of things—contracts, and digital regulations—so you can focus on what you do best.`}
               </p>
               <Link href="/services/legal-solutions">
                 <AppButton
@@ -207,7 +207,7 @@ export default function Home() {
         </div>
       </section>
       <section className="grid lg:grid-cols-2">
-        <div className="p-12 hidden lg:flex items-center justify-center order-last lg:order-none  bg-[#f5f5f5]">
+        <div className="p-12 hidden lg:flex items-center justify-center order-last lg:order-none  bg-[#F8F6F5]">
           <Image
             src={"/tech-lawyer2.png"}
             width={1000}
@@ -298,7 +298,7 @@ export default function Home() {
           <AppButton
             label="Get In Touch"
             fullyRounded
-            classname="bg-primary !text-secondary !w-max px-[40px] mt-[20px]"
+            classname="bg-primary !text-white !w-max px-[40px] mt-[20px]"
           />
         </div>
         <div className="hidden lg:flex items-center justify-center p-12 bg-[#f5f5f5]">

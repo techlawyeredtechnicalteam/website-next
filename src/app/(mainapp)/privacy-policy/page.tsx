@@ -99,14 +99,13 @@ export default function page() {
               7. Contact Us
             </h2>
             <p className="text-textGray text-[1.7rem]">
-              If you have any questions, contact us at
+              If you have any questions, contact us at{" "}
               <a
                 href="mailto:info@cyntonisca.com"
                 className="text-textBlack underline"
               >
                 info@cyntonisca.com
               </a>
-              .
             </p>
           </div>
         </div>

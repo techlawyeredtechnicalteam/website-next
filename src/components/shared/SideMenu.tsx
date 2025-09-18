@@ -32,7 +32,7 @@ export default function SideMenu() {
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.7 }}
-            className="fixed top-0 left-0 h-screen z-[3] bg-bgBlack w-full py-10"
+            className="fixed top-0 left-0 h-screen z-[3] w-full py-10 bg-gray-200"
           >
             <div className="flex items-center justify-between px-5">
               <Link onClick={() => setOpen(false)} href={"/"}>
@@ -59,7 +59,7 @@ export default function SideMenu() {
                     className={`text-[4rem] font-bold ${
                       pathname.startsWith("/services")
                         ? "text-secondary"
-                        : "text-white"
+                        : "text-primary"
                     }`}
                   >
                     Services
@@ -70,21 +70,21 @@ export default function SideMenu() {
                   <Link
                     onClick={() => setOpen(false)}
                     href={"/services/web-dev"}
-                    className={`text-[2rem] text-white px-6`}
+                    className={`text-[2rem] text-primary px-6`}
                   >
                     Web Development
                   </Link>
                   <Link
                     onClick={() => setOpen(false)}
                     href={"/services/mobile-dev"}
-                    className={`text-[2rem] text-white px-6`}
+                    className={`text-[2rem] text-textBlack px-6`}
                   >
                     Mobile Development
                   </Link>
                   <Link
                     onClick={() => setOpen(false)}
                     href={"/services/legal-solutions"}
-                    className={`text-[2rem] text-white px-6`}
+                    className={`text-[2rem] text-primary px-6`}
                   >
                     Legal Solutions
                   </Link>
@@ -94,7 +94,7 @@ export default function SideMenu() {
                 href={"/about"}
                 onClick={() => setOpen(false)}
                 className={`text-[4rem] font-bold ${
-                  isAbout ? "text-secondary" : "text-white"
+                  isAbout ? "text-secondary" : "text-primary"
                 }`}
               >
                 About Us
@@ -103,7 +103,7 @@ export default function SideMenu() {
                 href={"/contact"}
                 onClick={() => setOpen(false)}
                 className={`text-[4rem] font-bold ${
-                  isSupport ? "text-secondary" : "text-white"
+                  isSupport ? "text-secondary" : "text-primary"
                 }`}
               >
                 Support
@@ -112,7 +112,7 @@ export default function SideMenu() {
                 href={"/blog"}
                 onClick={() => setOpen(false)}
                 className={`text-[4rem] font-bold ${
-                  isBlog ? "text-secondary" : "text-white"
+                  isBlog ? "text-secondary" : "text-primary"
                 }`}
               >
                 Our Blog
@@ -121,7 +121,7 @@ export default function SideMenu() {
             <nav className="px-5 mt-10 flex flex-wrap items-center gap-6 md:gap-10">
               <Link
                 href={"/privacy-policy"}
-                className="text-[1.7rem]  text-white"
+                className="text-[1.7rem]  text-primary"
               >
                 Privacy Policy
               </Link>

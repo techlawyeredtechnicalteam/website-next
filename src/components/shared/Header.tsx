@@ -15,8 +15,8 @@ export default function Header() {
   const isBlog = pathname === "/blog";
 
   return (
-    <header className="h-[100px] bg-bgBlack px-5 md:px-[15px] lg:px-[25px] xl:px-[50px] flex items-center justify-between sticky top-0 z-[10]">
-      <Link href={"/"}>
+    <header className="h-[100px] bg-white px-5 md:px-[15px] lg:px-[25px] xl:px-[50px] flex items-center justify-between sticky top-0 z-[100] border border-white/10 shadow-2xl">
+      <Link href={"/"} className="group relative">
         <Image src={"/logo.png"} width={100} height={80} alt="Cyntonisca" />
       </Link>
       <nav className="hidden lg:flex items-center gap-10">
@@ -27,7 +27,7 @@ export default function Header() {
               className={`text-[1.7rem] ${
                 pathname.startsWith("/services")
                   ? "text-secondary"
-                  : "text-white"
+                  : "text-primary"
               } cursor-pointer`}
             >
               Services
@@ -50,7 +50,7 @@ export default function Header() {
           )}
           dropdownWidth="300px"
         />
-        <Link href={"/about"} className="text-[1.7rem]  text-white">
+        <Link href={"/about"} className="text-[1.7rem] text-primary">
           {isAbout ? (
             <mark className="markerb bg-transparent text-secondary">
               About Us
@@ -59,7 +59,7 @@ export default function Header() {
             "About Us"
           )}
         </Link>
-        <Link href={"/contact"} className="text-[1.7rem]  text-white">
+        <Link href={"/contact"} className="text-[1.7rem]  text-primary">
           {isSupport ? (
             <mark className="markerb bg-transparent text-secondary">
               Contact
@@ -68,7 +68,7 @@ export default function Header() {
             "Contact"
           )}
         </Link>
-        <Link href={"/blog"} className="text-[1.7rem]  text-white">
+        <Link href={"/blog"} className="text-[1.7rem]  text-primary">
           {isBlog ? (
             <mark className="markerb bg-transparent text-secondary">
               Our Blog

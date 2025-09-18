@@ -19,16 +19,20 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <section className="max-[376px]:h-[55vh] h-[50vh] md:h-[50vh] lg:h-[80vh] xl:h-[90vh] overflow-hidden relative">
-        <Image
-          priority={true}
-          width={1000}
-          height={1000}
-          className="w-full h-full object-cover"
-          alt="Navigo Rides"
-          src={"/hero.png"}
-        />
+    <main className="overflow-hidden">
+      <section className="max-[376px]:h-[55vh] h-[50vh] md:h-[50vh] lg:h-[80vh] xl:h-[90vh] flex items-center justify-center relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            priority={true}
+            width={1000}
+            height={1000}
+            className="w-full h-full object-cover"
+            alt="Navigo Rides"
+            src={"/hero.png"}
+          />
+          {/* Enhanced gradient overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-bgBlack/80 via-bgBlack/60 to-transparent"></div>
+        </div>
         <div className="absolute w-full h-full  top-0 px-5 md:px-[15px] lg:px-[25px] xl:px-[50px] flex flex-col justify-center">
           <h1 className="text-[3.5rem] md:text-[5rem] lg:text-[5rem] xl:text-[8rem] font-extrabold text-white lg:w-[75%]  font-hubot leading-[120%]">
             Where <span className="text-secondary">Technology</span> Meets Legal{" "}
@@ -79,7 +83,7 @@ export default function Home() {
           <WaitlistForm />
         </div>
       </section>
-      <section className="px-5 md:px-[50px] lg:px-[50px] xl:px-[100px] pb-0 pt-16 md:py-16 flex-col lg:flex-row flex w-full gap-6 bg-[#F8F6F5]">
+      <section className="px-5 md:px-[50px] lg:px-[50px] xl:px-[100px] pb-0 pt-16 md:py-16 flex-col lg:flex-row flex w-full gap-6 bg-gradient-to-br from-[#F8F6F5] to-white">
         <div className="lg:w-1/2 flex flex-col justify-center">
           <h2 className="text-[3rem] md:text-[3rem] lg:text-[3rem] xl:text-[4rem] font-bold text-textBlack font-hubot leading-[130%]">
             Who We Are
@@ -177,7 +181,7 @@ export default function Home() {
             Tools & Technologies We Use
           </h2>
         </div>
-        <div className="w-full h-[10rem] bg-[#DFFAFF] mt-10">
+        <div className="w-full h-[10rem] bg-gradient-to-br from-gray-50 to-white mt-10">
           <div className="overflow-hidden w-full h-full">
             <div className="h-full flex items-center gap-[120px]">
               <div className="h-full flex items-center gap-[120px] w-max techshowcase">

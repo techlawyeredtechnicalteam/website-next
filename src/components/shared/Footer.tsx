@@ -8,9 +8,19 @@ import TwitterXIcon from "./icons/TwitterXIcon";
 
 export default function Footer() {
   return (
-    <footer className="px-5 md:px-[15px] lg:px-[25px] xl:px-[50px] py-12 bg-bgBlack">
+    <footer className="px-5 md:px-[15px] lg:px-[25px] xl:px-[50px] py-12 bg-gradient-to-br from-bgBlack via-gray-900 to-bgBlack relative overflow-hidden">
+      {/* Background pattern  */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-secondary/20 to-primary/20"></div>
+      </div>
       <div className="flex flex-col lg:flex-row lg:items-center justify-between w-full pb-[40px] gap-y-12">
-        <Image src={"/logo.png"} width={100} height={80} alt="Cyntonisca" />
+        <Image
+          src={"/logo.png"}
+          width={100}
+          height={80}
+          alt="Cyntonisca"
+          className="text-white bg-white"
+        />
         <nav className="flex flex-wrap items-center gap-6 md:gap-10">
           <Link href={"/about"} className="text-[1.7rem]  text-white">
             About Us

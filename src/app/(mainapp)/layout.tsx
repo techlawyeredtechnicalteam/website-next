@@ -68,8 +68,8 @@ export default function RootLayout({
         <RootProvider user={null}>
           <Alert />
           <NextTopLoader
-            color="#73eaff"
-            shadow="0 0 10px #73eaff,0 0 5px #73eaff"
+            color="#5E4241"
+            shadow="0 0 10px #5E4241,0 0 5px #5E4241"
           />
           <Header />
           {children}
